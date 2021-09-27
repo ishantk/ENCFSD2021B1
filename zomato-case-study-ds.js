@@ -64,4 +64,7 @@ console.log("TOTAL TO PAY: \u20b9"+totalPrice);
     Edge Cases:
         1. If dish is not found in the Menu, show an error message
         2. Show the Dishes in number i.e. if 2 dishes with 2 quantities each, show 4
+        3. Implement Promo Code Use Case as discussed after showing the final value
+        4. If we enter the dish again, cart should not add duplicate data, rather quantity in the previous dish should be added/updated
+        5. Sort the Cart as per price of dishes or alphabetically.
 */
