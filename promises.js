@@ -12,7 +12,7 @@ let myPromise = new Promise(
         // to perform some task async
 
         // Some code to download/upload the file goes here
-        let isFileDownloaded = false;
+        let isFileDownloaded = true;
 
         if(isFileDownloaded){
             resolve(); // promise fulfilled | success
@@ -31,3 +31,10 @@ myPromise.then(
         console.log("File Upload Failed");
     }
 );
+
+function uploadFile(){
+    console.log("File Uploaded");
+}
+
+let data = setTimeout(uploadFile, 5000);
+console.log(data);
