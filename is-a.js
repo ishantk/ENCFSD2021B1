@@ -13,12 +13,15 @@ class User{
         console.log(this.name+" "+this.phone+" "+this.email);
     }
 
-    askForUpgrade(){
-
+    askForUpgrade(user){
     }
 
     upgradeUserToPrime(){
-        
+       //return new PrimeUser(this.name, this.phone, this.email);
+       // Add some more attributes in the same object :)
+       this.isVideo = true
+       this.isMusic = true
+       this.freeDeliveries = 10
     }
 }
 
@@ -50,5 +53,9 @@ u1.show()
 
 let u2 = new PrimeUser(name="Fionna", phone="+91 98765 12345", email="fionna@example.com");
 u2.show()
+
+console.log("Upgraded User: ");
+let upgradedUser = u1.upgradeUserToPrime()
+upgradedUser.show()
 
 // Assignment: Upgrade Regular User to a Prime User :)
