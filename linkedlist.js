@@ -41,6 +41,7 @@ song2.previousSong = song1;
 song3.previousSong = song2;
 
 // Forward Iteration
+console.log("Iterating Forward");
 let temporary = song1;
 
 while(true){
@@ -53,3 +54,15 @@ while(true){
 }
 
 // Backward Iteration
+
+console.log("Iterating Backward");
+temporary = song3; 
+
+while(true){
+    temporary.show()
+    temporary = temporary.previousSong;
+
+    if(temporary == song3){
+        break;
+    }
+}
